@@ -1,0 +1,82 @@
+*,
+:before,
+:after {
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #ccc;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	border: 0
+}
+
+.wrap {
+	min-width: 640px;
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	background: 50% 0 no-repeat fixed;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+section>div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+section>div>img {
+	display: inline-block;
+}
+
+.todown {
+	display: block;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -45.5px;
+	height: 93px;
+	width: 91px;
+	background: url("../img/todown.png") no-repeat;
+	z-index: 2;
+}
+
+.totop {
+	display: none;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	height: 93px;
+	width: 91px;
+	background: url("../img/totop.png") no-repeat;
+	z-index: 2;
+}
